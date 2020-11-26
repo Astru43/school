@@ -1,6 +1,6 @@
-int analogInPin = A0;
+int analogInPin = A0;         // input pin      
 
-int sensorValue = 0;        
+int sensorValue = 0;         // Variable                  
        
 
 void setup() {
@@ -10,10 +10,10 @@ void setup() {
 
 void loop() {
 
-  sensorValue = analogRead(analogInPin);
+  sensorValue = analogRead(analogInPin);         // read the input on analog pin 0
  
   Serial.print ("Rx=");
-  Serial.println (sensorValue);
+  Serial.println (sensorValue);           // Prints out the value you read
   
 
   delay(2);
